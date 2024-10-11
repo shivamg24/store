@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+
+    <!-- Payment Header -->
+    <header class="header">
+        <a href="index.html" class="logo">Grocery Store</a>
+    </header>
+
+    <!-- Payment Section -->
+    <section class="payment-container">
+        <div class="payment-box">
+            <h2 class="payment-title">Pay securely with Paytm</h2>
+
+            <!-- Total amount to pay -->
+            <p class="amount-text">Amount to Pay: ₹<span id="total-amount">500.00</span></p>
+
+            <!-- Payment Form -->
+            <form id="payment-form">
+                
+                <!-- Card Payment Option -->
+                <div class="form-group">
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" placeholder="Enter your card number" required>
+                </div>
+
+                <!-- Expiry Date -->
+                <div class="form-group">
+                    <label for="expiry-date">Expiry Date (MM/YY):</label>
+                    <input type="text" id="expiry-date" placeholder="MM/YY" required>
+                </div>
+
+                <!-- CVV -->
+                <div class="form-group">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" placeholder="CVV" required>
+                </div>
+
+                <!-- UPI Payment Option -->
+                <div class="form-group">
+                    <label for="upi-id">Or Pay with UPI:</label>
+                    <input type="text" id="upi-id" placeholder="Enter UPI ID">
+                </div>
+
+                <!-- Pay Now Button -->
+                <button type="submit" class="pay-button">Pay Now</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Grocery Store</p>
+    </footer>
+
+    <script src="payment.js"></script>
+</body>
+</html>
